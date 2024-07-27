@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drive</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto+Condensed:wght@700&family=Roboto+Slab&family=Roboto:wght@300&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+<style>
+    .navbar-secondary {
+  background-color: #f1f1f1;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.navbar-secondary-title {
+  float: left;
+  margin-top: 5px;
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar-nav-secondary {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-item-secondary {
+  margin: 10px;
+}
+
+.nav-link-secondary {
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-link-secondary:hover {
+  color: #666;
+}
+#requirements {
+  text-align: center;
+}
+
+#requirements h1 {
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.signup-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.step {
+  flex-basis: 30%;
+  margin-right: 2%;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+button {
+  display: block;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgb(255, 179, 0);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#driving-basics , #earnings, #safety{
+  text-align: center;
+}
+
+#driving-basics h1 ,#earnings h1, #safety h1{
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.signup-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.step {
+  flex-basis: 30%;
+  margin-right: 2%;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;padding: 20px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+</style>
+</head>
+<body>
+    <div class="nav">
+         
+        <div class="left">
+          <a href="index.html"><img class="logo" src="logo.jpg" alt="logo" style="height: 50px; width: auto;"></a>
+            <a href="ride.html" style="text-decoration: none;"><button class="ride">Ride</button></a>
+            <a href="drive.html" style="text-decoration: none;"><button class="drive">Drive</button></a>
+            <a href="aboutus.html" target="_blank" style="text-decoration: none;"><button class="about">About Us</button></a>
+        </div>
+        
+        <div   class="right">
+            <i class="fa-solid fa-earth-asia"></i>
+            <button class="en">EN</button>
+            <a href="help.html" target="_blank" style="text-decoration: none;"><button class="help">Help</button></a>
+            <button class="login" id="login-btn">Login</button>
+            <button class="signup" id="signin-btn">Sign up</button>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Login</h2>
+        <form class="login-form">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required />
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+          <input type="submit" value="Login" />
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <div id="myModal2" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Sign Up</h2>
+        <form class="sign-up-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="username">Username:</label>
+          <input type="text" id="username2" name="username2" required />
+          <label for="password">Password:</label>
+          <input type="password" id="password2" name="password2" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <input type="submit" value="Sign Up" />
+        </form>
+      </div>
+    </div>
+  <script src="script.js"></script>
+      <nav class="navbar-secondary">
+        <div class="navbar-secondary-title">DRIVE</div>
+        <ul class="navbar-nav-secondary">
+          <li class="nav-item-secondary">
+            <a class="nav-link-secondary" href="#overview">Overview</a>
+          </li>
+          <li class="nav-item-secondary">
+            <a class="nav-link-secondary" href="#requirements">Requirements</a>
+          </li>
+          <li class="nav-item-secondary">
+            <a class="nav-link-secondary" href="#driving-basics">Driving basics</a>
+          </li>
+          <li class="nav-item-secondary">
+            <a class="nav-link-secondary" href="#earnings">Earnings</a>
+          </li>
+          <li class="nav-item-secondary">
+            <a class="nav-link-secondary" href="#safety">Safety</a>
+          </li>
+        </ul>
+      </nav>
+    
+      <section id="overview" style="background-color: black; color: white;"><br>
+        <h1>Overview</h1>
+        <img src="cab-removebg-preview.png" height="400px" style="float: left;">
+      <pre style="font-size: 25px;"><h1 style="font-size: 50px;">Drive when you want,
+make what you need</h1>
+                      Earn on your own schedule</pre><br>
+<img src="drive.png.jpg" width="1243px">
+      </section><br><br>
+      <section id="requirements">
+        <h1>Requirements</h1>
+        <div class="signup-section">
+          <div class="step">
+            <h2>Step 1:</h2>
+            <h3>Sign up online</h3>
+            <p>Tell us about yourself and your car, if you have one. If you don't, we'll help you get one.</p>
+            <button>Sign up now</button>
+          </div>
+          <div class="step">
+            <h2>Step 2:</h2>
+        <h3>Share some documents</h3>
+            <p>We'll need a copy of the required documents mentioned above. It is also necessary to have a commercial car. In case you have any question, mail us at <a href="mailto:taxiwaala@gmail.com" style="color: orange;">taxiwaala@gmail.com"</a></p>
+          </div>
+          <div class="step">
+            <h2>Step 3:</h2>
+        <h3>Activate your account</h3>
+            <p>Bring your car to a lus. Requirements vary, so sign up to see more information.</p>
+            <button>Learn more</button>
+          </div>
+        </div>
+      </section>
+    <br>
+    
+    <section id="driving-basics" style="background-color: black; color: white;">
+      <br>
+        <h1>Driving Basics</h1>
+        <div class="signup-section">
+          <div class="step">
+            <h2>Step 1:</h2>
+            <h3>Complete the online tutorial</h3>
+            <p>Learn the fundamentals of safe driving from the comfort of your own home. Our interactive tutorial covers everything from basic traffic laws to defensive driving techniques.</p>
+          </div>
+          <div class="step">
+            <h2>Step 2:</h2>
+            <h3>Pass a driving test</h3>
+            <p>After completing the online tutorial, you'll need to pass a driving test to prove that you've mastered the basics. Our experienced instructors will guide you through the process and help you succeed.</p>
+          </div>
+          <div class="step">
+            <h2>Step 3:</h2>
+            <h3>Get on the road</h3>
+            <p>Once you've passed the driving test, you're ready to hit the road! Our flexible scheduling options make it easy to find a time that works for you. Whether you're a busy parent or a student with a packed schedule, we've got you covered.</p>
+          </div>
+        </div>
+      </section>
+    <br><br>
+      <section id="earnings"  >
+        <h1>Earnings</h1>
+        <div class="signup-section">
+        <div class="step">
+            <h3>Standard fare</h3>
+            <p>You earn a fare for every completed trip.</p>
+          </div>
+          <div class="step">
+            <h3>Surge</h3>
+            <p>Check the heat map in your app to find out when and where rider demand is high, so you can earn more on top of your standard fare.</p>
+          </div>
+          <div class="step">
+            <h3>Minimum trip earnings</h3>
+            <p>Each city has a minimum amount that you'll earn for any trip. This makes sure your earnings reflect the effort you put in, even on short trips.</p>
+          </div>
+          <div class="step">
+            <h3>Service fee</h3>
+            <p>This fee helps fund things like app development and customer support.</p>
+          </div>
+          <div class="step">
+            <h3>Cancellations</h3>
+            <p>In most instances, you’ll receive a cancellation fee if a rider cancels a request.</p>
+          </div>
+        </div>
+      </section>
+    <br>
+      <section id="safety" style="background-color: black; color: white;"><br>
+        <h1>Safety</h1>
+        <div class="signup-section">
+            <div class="step">
+                <h3>Masks are no longer required</h3>
+                <p>As of April 19, 2022, riders and drivers are not required to wear masks when using Uber. However, the CDC still recommends wearing a mask if you have certain personal risk factors and/or high transmission levels in your area.</p>
+                <br><p>Remember: many people still feel safer wearing a mask because of personal or family health situations, so please be respectful of their preferences. And if you ever feel uncomfortable, you can always cancel the trip.</p>
+              </div>
+              <div class="step">
+                <h3>Updating our no-front-seat policy</h3>
+                <p>Riders are no longer required to sit in the back seat. However, to give you more space, we’re still asking that riders only use the front seat if it’s required because of the size of their group.</p>
+              </div>
+              <div class="step">
+                <h3>Thank you for helping take care of one another</h3>
+                <p>We know the pandemic has been difficult. But you’ve continued to go the extra mile to help protect our communities—whether it’s wearing a mask, making space for one another, or helping people get the food they need. Thank you for that.</p>
+                <br><p>It’s still important to take safety precautions while driving and delivering. So make sure to roll down the windows for extra airflow, sanitize your hands before and after trips or deliveries, and always cover your cough or sneeze.s.</p>
+              </div>
+            </div>
+        <!-- Add the contents for the safety page here -->
+      </section>
+    
+      <footer class="footer">
+        <div class="footer-content">
+            <div class="points">COMPANY
+                <ul class="footer-ul">
+                    <li class="footer-li"><a href="aboutus.html" target="_blank">About us</a></li>
+                    <li class="footer-li"><a href="aboutus.html" target="_blank">Careers</a></li>
+                  </ul>
+                </div>
+            <div class="points">CONTACT
+                    <ul class="footer-ul">
+                      <li class="footer-li"><a href="help.html">Help & Support</a></li>
+                      <li class="footer-li"><a href="ride.html" target="_blank">Ride</a></li>
+                      <li class="footer-li"><a href="drive.html" target="_blank">Drive</a></li>
+                    </ul>
+                </div>
+            <div class="points">LEGAL
+                    <ul class="footer-ul">
+                      <li class="footer-li"><a href="t&c.html" target="_blank">Terms & Conditions</a></li>
+                      <li class="footer-li"><a href="cancellation.html" target="_blank">Refund & Cancellation</a></li>
+                      <li class="footer-li"><a href="privacy.html" target="_blank">Privacy Policy</a></li>
+                      <li class="footer-li"><a href="cookie.html" target="_blank">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            <div class="points">
+              <img
+                      src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/m/play_store.png"
+                      height="50"/>
+                    <img
+                      src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/m/app_store.png"
+                      height="54"/>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

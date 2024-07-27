@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto+Condensed:wght@700&family=Roboto+Slab&family=Roboto:wght@300&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+</head>
+<style>
+    form {
+      margin: 30px;
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			max-width: 300px;
+		}
+		label {
+			font-size: 14px;
+			color: #666;
+			margin-bottom: 5px;
+		}
+		input[type="text"], input[type="email"], input[type="tel"], select, textarea {
+      padding: 10px;
+			margin-bottom: 10px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			font-size: 14px;
+			color: #333;
+      cursor: pointer;
+		}
+    input[type="submit"] {
+			background-color: #e6ac38;
+			color: #fff;
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			font-size: 16px;
+			margin-top: 10px;
+			cursor: pointer;
+		}
+		input[type="submit"]:hover {
+			background-color: #e1820d;
+		}
+    select{
+      padding: 10px;
+			margin-bottom: 10px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			font-size: 14px;
+			color: #333;
+      cursor: pointer;
+    }
+    .container1{
+      display: flex;
+    }
+		@media (min-width: 800px) {
+			.container {
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: flex-start;
+			}
+			.form-container{
+				padding: 40px;
+				background-color: #fff;
+				border-radius: 10px;
+				box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+			}
+		}
+</style>
+<body>
+    <div class="nav">
+         
+        <div class="left">
+          <a href="index.html"><img class="logo" src="logo.jpg" alt="logo" style="height: 50px; width: auto;"></a>
+            <a href="ride.html" style="text-decoration: none;"><button class="ride">Ride</button></a>
+            <a href="drive.html" style="text-decoration: none;"><button class="drive">Drive</button></a>
+            <a href="aboutus.html" target="_blank" style="text-decoration: none;"><button class="about">About Us</button></a>
+        </div>
+        
+        <div   class="right">
+            <i class="fa-solid fa-earth-asia"></i>
+            <button class="en">EN</button>
+            <a href="help.html" target="_blank" style="text-decoration: none;"><button class="help">Help</button></a>
+            <button class="login" id="login-btn">Login</button>
+            <button class="signup" id="signin-btn">Sign up</button>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Login</h2>
+        <form class="login-form">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required />
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+          <input type="submit" value="Login" />
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <div id="myModal2" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Sign Up</h2>
+        <form class="sign-up-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="username">Username:</label>
+          <input type="text" id="username2" name="username2" required />
+          <label for="password">Password:</label>
+          <input type="password" id="password2" name="password2" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <input type="submit" value="Sign Up" />
+        </form>
+      </div>
+    </div>
+  <script src="script.js"></script>
+      <br>
+      <div class="container1">
+      <form class="form-container" style="display: flex;">
+        <h2>Get a Ride</h2>
+        <input type="text" id="pickup" name="pickup" placeholder="Pickup Location" required><br>
+        <input type="text" id="dropoff" name="dropoff" placeholder="Dropoff Location" required><br>
+        <select id="forme" name="forme" required>
+					<option value="car">For Me</option>
+					<option value="car">For Someone else</option>
+				</select><br>
+        <input type="submit" value="Book Now">
+    </form>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122527.617742286!2d80.35211645354838!3d16.323554617060704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a755cb1787785%3A0x9f7999dd90f1e694!2sGuntur%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1711365197546!5m2!1sen!2sin" width="800" height="550" style="border:0; padding-left: 7px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </div><footer class="footer">
+        <div class="footer-content">
+            <div class="points">COMPANY
+                <ul class="footer-ul">
+                    <li class="footer-li"><a href="aboutus.html" target="_blank">About us</a></li>
+                    <li class="footer-li"><a href="aboutus.html" target="_blank">Careers</a></li>
+                  </ul>
+                </div>
+            <div class="points">CONTACT
+                    <ul class="footer-ul">
+                      <li class="footer-li"><a href="help.html">Help & Support</a></li>
+                      <li class="footer-li"><a href="ride.html" target="_blank">Ride</a></li>
+                      <li class="footer-li"><a href="drive.html" target="_blank">Drive</a></li>
+                    </ul>
+                </div>
+            <div class="points">LEGAL
+                    <ul class="footer-ul">
+                      <li class="footer-li"><a href="t&c.html" target="_blank">Terms & Conditions</a></li>
+                      <li class="footer-li"><a href="cancellation.html" target="_blank">Refund & Cancellation</a></li>
+                      <li class="footer-li"><a href="privacy.html" target="_blank">Privacy Policy</a></li>
+                      <li class="footer-li"><a href="cookie.html" target="_blank">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            <div class="points">
+              <img
+                      src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/m/play_store.png"
+                      height="50"/>
+                    <img
+                      src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/m/app_store.png"
+                      height="54"/>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

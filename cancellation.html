@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drive</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto+Condensed:wght@700&family=Roboto+Slab&family=Roboto:wght@300&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+</head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        #c li{
+            list-style-type: lower-alpha;
+            margin-left: 3rem;
+        }
+        h3 {
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+         
+        <div class="left">
+          <a href="index.html"><img class="logo" src="logo.jpg" alt="logo" style="height: 50px; width: auto;"></a>
+            <a href="ride.html" style="text-decoration: none;"><button class="ride">Ride</button></a>
+            <a href="drive.html" style="text-decoration: none;"><button class="drive">Drive</button></a>
+            <a href="aboutus.html" target="_blank" style="text-decoration: none;"><button class="about">About Us</button></a>
+        </div>
+        
+        <div   class="right">
+            <i class="fa-solid fa-earth-asia"></i>
+            <button class="en">EN</button>
+            <a href="help.html" target="_blank" style="text-decoration: none;"><button class="help">Help</button></a>
+            <button class="login" id="login-btn">Login</button>
+            <button class="signup" id="signin-btn">Sign up</button>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Login</h2>
+          <form class="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required />
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+            <input type="submit" value="Login" />
+          </form>
+        </div>
+      </div>
+      <script src="script.js"></script>
+      <div id="myModal2" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Sign Up</h2>
+          <form class="sign-up-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="username">Username:</label>
+            <input type="text" id="username2" name="username2" required />
+            <label for="password">Password:</label>
+            <input type="password" id="password2" name="password2" required />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <input type="submit" value="Sign Up" />
+          </form>
+        </div>
+      </div>
+    <script src="script.js"></script>
+
+      <div id="c" style="padding-left: 30px; padding-right: 30px;">
+        <br>
+    <h1>Taxi Waala Cancellation Policy</h1>
+    <p>At Taxi Waala, we understand that plans can change unexpectedly. That's why we have a cancellation policy in place to ensure fairness for both riders and drivers. Please familiarize yourself with our cancellation policy outlined below:    </p>
+    <h2>Rider Cancellations:</h2>
+    <ol>
+        <li>Cancellation Window: Riders can cancel their ride request anytime before the driver arrives at the pickup location. However, once the driver is on the way, a cancellation fee may apply.</li>
+        <li>Cancellation Fees: If a rider cancels a trip after the driver has already accepted the request and is en route to the pickup location, a cancellation fee will be charged. The cancellation fee amount may vary based on factors such as distance, time, and demand conditions.</li>
+        <li>Repeated Cancellations: Riders with a history of frequent cancellations may be subject to additional penalties, including temporary account suspension.</li>
+    </ol>
+    <h2>Driver Cancellations:</h2>
+    <ol>
+        <li>Acceptance Responsibility: Once a driver accepts a ride request, they are expected to proceed to the pickup location promptly. Cancelling a ride after acceptance should be done only in exceptional circumstances.</li>
+        <li>Cancellation Fees: If a driver cancels a ride request after accepting it, they may be subject to a cancellation fee. This fee compensates the rider for any inconvenience caused.</li>
+        <li>No-Show Compensation: In cases where the rider fails to show up at the designated pickup location, the driver may receive compensation to cover the time and effort expended.</li>
+    </ol>
+    <h2>Cancellation Fee Disputes:</h2>
+    <ol>
+        <li>Appeals Process: In the event of a dispute regarding cancellation fees, both riders and drivers have the option to appeal the charge through the Taxi Waala support channels. We will review the circumstances of the cancellation and make a fair determination.</li>
+        <li>Refunds: In certain situations, such as technical glitches or extenuating circumstances, cancellation fees may be refunded at the discretion of Taxi Waala.</li>
+    </ol>
+    <h2>Important Notes:</h2>
+    <ol>
+        <li>Fair Treatment: Taxi Waala is committed to ensuring fair treatment for both riders and drivers. Our cancellation policy is designed to balance the needs of all parties involved.</li>
+        <li>Transparency: We strive to maintain transparency regarding our cancellation policy. Riders and drivers can review the policy in full detail within the Taxi Waala app or on our website.</li>
+        <li>Feedback: Your feedback regarding our cancellation policy is valuable to us. If you have any suggestions or concerns, please don't hesitate to contact us.</li>
+    </ol>
+    <p>By using the Taxi Waala service, you agree to adhere to the terms outlined in this cancellation policy. Thank you for choosing Taxi Waala for your transportation needs.</p>
+    <p>For questions or concerns regarding these, please contact us at <a href="mailto:taxiwaala@gmail.com">taxiwaala@gmail.com</a>.</p>
+</div>
+<footer class="footer">
+    <div class="footer-content">
+        <div class="points">COMPANY
+            <ul class="footer-ul">
+                <li class="footer-li"><a href="aboutus.html" target="_blank">About us</a></li>
+                <li class="footer-li"><a href="aboutus.html" target="_blank">Careers</a></li>
+              </ul>
+            </div>
+        <div class="points">CONTACT
+                <ul class="footer-ul">
+                  <li class="footer-li"><a href="help.html">Help & Support</a></li>
+                  <li class="footer-li"><a href="ride.html" target="_blank">Ride</a></li>
+                  <li class="footer-li"><a href="drive.html" target="_blank">Drive</a></li>
+                </ul>
+            </div>
+        <div class="points">LEGAL
+                <ul class="footer-ul">
+                  <li class="footer-li"><a href="t&c.html" target="_blank">Terms & Conditions</a></li>
+                  <li class="footer-li"><a href="cancellation.html" target="_blank">Refund & Cancellation</a></li>
+                  <li class="footer-li"><a href="privacy.html" target="_blank">Privacy Policy</a></li>
+                  <li class="footer-li"><a href="cookie.html" target="_blank">Cookie Policy</a></li>
+                </ul>
+            </div>
+        <div class="points">
+            <img
+                      src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/m/play_store.png"
+                      height="50"/>
+                    <img
+                      src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/m/app_store.png"
+                      height="54"/>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

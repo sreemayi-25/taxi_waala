@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxi वाला</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto+Condensed:wght@700&family=Roboto+Slab&family=Roboto:wght@300&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="nav">
+         
+        <div class="left">
+        <a href="index.html"><img class="logo" src="logo.jpg" alt="logo" style="height: 50px; width: auto;"></a>
+            <a href="ride.html" style="text-decoration: none;"><button class="ride">Ride</button></a>
+            <a href="drive.html" style="text-decoration: none;"><button class="drive">Drive</button></a>
+            <a href="aboutus.html" target="_blank" style="text-decoration: none;"><button class="about">About Us</button></a>
+        </div>
+        
+        <div   class="right">
+            <i class="fa-solid fa-earth-asia"></i>
+            <button class="en">EN</button>
+            <a href="help.html" target="_blank" style="text-decoration: none;"><button class="help">Help</button></a>
+            <button class="login" id="login-btn">Login</button>
+            <button class="signup" id="signin-btn">Sign up</button>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Login</h2>
+          <form class="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required />
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+            <input type="submit" value="Login" />
+          </form>
+        </div>
+      </div>
+      <script src="script.js"></script>
+      <div id="myModal2" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Sign Up</h2>
+          <form action="signup.php" method="post" class="sign-up-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="username">Username:</label>
+            <input type="text" id="username2" name="username2" required />
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required />
+            <label for="password">Password:</label>
+            <input type="password" id="password2" name="password2" required />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <input type="submit" value="Sign Up" />
+          </form>
+        </div>
+      </div>
+    <script src="script.js"></script>
+    
+    <div class="main">
+    <div class="container">
+        <h1 style="font-size: 60px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Go anywhere with Taxi वाला</h1>
+        <form id="ride-form">
+            <input type="text" id="location" placeholder="Enter location" size="20" required >
+            <input type="text" id="destination" placeholder="Enter destination" required>
+            <button type="submit">See prices</button>
+        </form>
+    </div>
+</div>
+    <script src="script.js"></script>
+    <div class="uber-ride">
+        <h1>Ride with Taxi वाला</h1>
+        <div class="go">
+
+            <div class="auto">
+                <img src="auto.jpg" height="250px" width="400px" alt="">
+               <div>
+                <h3>Auto</h3>
+                <p>Get affordable Taxi वाला auto ride with no hangling.   </p>
+                 
+               </div>
+            </div>
+    
+            <div class="auto">
+                <img src="scooty.png.jpg" height="250px" width="400px" alt="">
+                <div>
+                    <h3>Bike</h3>
+                    <p>Get affordable Taxi वाला auto ride with no hangling. </p>
+                     
+                   </div>
+            </div>
+        </div>
+
+      <div class="go">
+
+        <div class="auto">
+            <img src="car.png.jpg" height="250px" width="auto" alt="">
+            <div>
+                <h3>Car</h3>
+                <p>Get affordable Taxi वाला auto ride with no hangling. </p>
+                 
+               </div>
+        </div>
+
+        <div class="auto">
+            <img src="rent.jpg" height="250px" alt="">
+            <div>
+                <h3>Car Rentals</h3>
+                <p>Get affordable Taxi वाला auto ride with no hangling. </p>
+                 
+               </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="head">
+        <h1>Focused on safety, wherever you go</h1>
+    </div>
+
+    <div class="cards">
+         <div class="img">
+            <img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_2136,h_2136/v1684855112/assets/96/4dd3d1-94e7-481e-b28c-08d59353b9e0/original/earner-illustra.png" height="auto" width="499">
+            <br><br>
+            <h3 style="margin-left: 80px;">Our commitment to your safety</h3>
+         </div>
+
+         <div class="img">
+            <img src="ride.jpg" height="auto" width="499" alt="" style="border-radius: 10px;"><br><br>
+            <h3 style="margin-left: 120px;">Setting 10,000+ cities in motion</h3>
+         </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="points">COMPANY
+                <ul class="footer-ul">
+                    <li class="footer-li"><a href="aboutus.html" target="_blank">About us</a></li>
+                    <li class="footer-li"><a href="aboutus.html" target="_blank">Careers</a></li>
+                  </ul>
+                </div>
+            <div class="points">CONTACT
+                    <ul class="footer-ul">
+                      <li class="footer-li"><a href="help.html">Help & Support</a></li>
+                      <li class="footer-li"><a href="ride.html" target="_blank">Ride</a></li>
+                      <li class="footer-li"><a href="drive.html" target="_blank">Drive</a></li>
+                    </ul>
+                </div>
+            <div class="points">LEGAL
+                    <ul class="footer-ul">
+                      <li class="footer-li"><a href="t&c.html" target="_blank">Terms & Conditions</a></li>
+                      <li class="footer-li"><a href="cancellation.html" target="_blank">Refund & Cancellation</a></li>
+                      <li class="footer-li"><a href="privacy.html" target="_blank">Privacy Policy</a></li>
+                      <li class="footer-li"><a href="cookie.html" target="_blank">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            <div class="points">  <img
+                      src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/m/play_store.png"
+                      height="50"/>
+                    <img
+                      src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/m/app_store.png"
+                      height="54"/>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
