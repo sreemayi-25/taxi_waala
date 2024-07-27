@@ -28,3 +28,4 @@ Help Pages:We have dedicated help pages where customers can find answers to freq
 
 Login and Signup Pages:To facilitate secure access to our platform, we have implemented login and signup pages. Users can create accounts, sign in securely, and manage their bookings efficiently. These pages are essential for ensuring the security and privacy of our users' information.
 
+# NOTE: MAKE SURE YOU HAVE XAAMP/PHP IN YOUR SYSTEM AND INCLUDE THE CODES IN THE HTDOCS FOLDER. Open using localhost/foldername also u can check your databases in PHPMyAdmin.
