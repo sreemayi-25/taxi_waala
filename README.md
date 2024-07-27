@@ -1,5 +1,6 @@
 # Taxi वाला
 Taaxiवाला is a taxi service app using HTML, CSS, JavaScript, PHP, and MySQL. It features a homepage, About Us, Help, Terms, Drive with Us, and Ride with Us pages. Users can book rides by selecting start and end points. After booking, a confirmation page shows driver details. Backend manages ride data storage and dynamic pricing based on distance.
+
 ![logo](https://github.com/user-attachments/assets/7f99fe92-5915-4372-a602-a9ed9111a6cb)
 
 ## Introduction to Taaxiwaala
